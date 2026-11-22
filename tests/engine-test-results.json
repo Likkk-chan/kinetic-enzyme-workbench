@@ -1,0 +1,412 @@
+{
+  "passed": true,
+  "runtime": {
+    "webR": "0.6.0",
+    "R": "R version 4.6.0 (2026-04-24)"
+  },
+  "checks": 71,
+  "durationSeconds": 20.172,
+  "fixtures": [
+    {
+      "file": "competitive-noiseless.csv",
+      "trueModel": "competitive",
+      "preferredModel": "competitive",
+      "trueModelParameters": {
+        "Vmax": 120.000000000263,
+        "Km": 35.0000000001399,
+        "Ki": 17.9999999999859
+      },
+      "rmse": 8.92936805334723e-11,
+      "holdoutRmse": 1.30971536274089e-9,
+      "status": "supported",
+      "seconds": 2.735
+    },
+    {
+      "file": "competitive-noisy.csv",
+      "trueModel": "competitive",
+      "preferredModel": "competitive",
+      "trueModelParameters": {
+        "Vmax": 119.14327261139,
+        "Km": 33.66149199909,
+        "Ki": 17.1708217182807
+      },
+      "rmse": 1.29934694674303,
+      "holdoutRmse": 1.78516016638416,
+      "status": "tentative",
+      "seconds": 1.361
+    },
+    {
+      "file": "uncompetitive-noiseless.csv",
+      "trueModel": "uncompetitive",
+      "preferredModel": "uncompetitive",
+      "trueModelParameters": {
+        "Vmax": 119.999999996712,
+        "Km": 34.999999997373,
+        "Ki": 18.0000000010724
+      },
+      "rmse": 7.52426025213671e-10,
+      "holdoutRmse": 3.21478894316284e-10,
+      "status": "supported",
+      "seconds": 1.164
+    },
+    {
+      "file": "uncompetitive-noisy.csv",
+      "trueModel": "uncompetitive",
+      "preferredModel": "uncompetitive",
+      "trueModelParameters": {
+        "Vmax": 119.737274512309,
+        "Km": 34.8328215716663,
+        "Ki": 18.2284125478704
+      },
+      "rmse": 1.01429577030121,
+      "holdoutRmse": 1.11214276464305,
+      "status": "tentative",
+      "seconds": 1.084
+    },
+    {
+      "file": "noncompetitive-noiseless.csv",
+      "trueModel": "noncompetitive",
+      "preferredModel": "noncompetitive",
+      "trueModelParameters": {
+        "Vmax": 120.000000000265,
+        "Km": 35.0000000001155,
+        "Ki": 17.9999999999333
+      },
+      "rmse": 7.11505177222458e-11,
+      "holdoutRmse": 3.6669788632158e-9,
+      "status": "tentative",
+      "seconds": 1.078
+    },
+    {
+      "file": "noncompetitive-noisy.csv",
+      "trueModel": "noncompetitive",
+      "preferredModel": "noncompetitive",
+      "trueModelParameters": {
+        "Vmax": 120.342523630832,
+        "Km": 34.7235928256274,
+        "Ki": 17.7097887178488
+      },
+      "rmse": 1.16110027997207,
+      "holdoutRmse": 0.960011754066428,
+      "status": "tentative",
+      "seconds": 1.032
+    },
+    {
+      "file": "mixed-noiseless.csv",
+      "trueModel": "mixed",
+      "preferredModel": "mixed",
+      "trueModelParameters": {
+        "Vmax": 119.999999989614,
+        "Km": 34.9999999842826,
+        "Kis": 11.9999999851155,
+        "Kii": 65.000000067115
+      },
+      "rmse": 4.16319600556688e-9,
+      "holdoutRmse": 1.61917455813101e-7,
+      "status": "supported",
+      "seconds": 1.105
+    },
+    {
+      "file": "mixed-noisy.csv",
+      "trueModel": "mixed",
+      "preferredModel": "mixed",
+      "trueModelParameters": {
+        "Vmax": 121.246304436506,
+        "Km": 36.0114606768943,
+        "Kis": 12.3702636797395,
+        "Kii": 60.6426017757596
+      },
+      "rmse": 1.29280910973967,
+      "holdoutRmse": 1.3692227801288,
+      "status": "supported",
+      "seconds": 1.023
+    }
+  ],
+  "details": [
+    {
+      "name": "competitive-noiseless.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "competitive-noiseless.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "competitive-noiseless.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "competitive-noiseless.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "competitive-noiseless.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "competitive-noiseless.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "competitive-noiseless.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "competitive-noisy.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noiseless.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "uncompetitive-noisy.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noiseless.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "noncompetitive-noisy.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "mixed-noiseless.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: correct preferred candidate",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: four models / all input rows retained",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: weights sum to one",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: variance included in AICc parameter count",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: kinetic parameter recovery",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: finite residuals, predictions and approximate CIs",
+      "passed": true
+    },
+    {
+      "name": "mixed-noisy.csv: fixed grouped holdout retains replicate groups",
+      "passed": true
+    },
+    {
+      "name": "Experiment proposals respect bounds and exclude measured pairs",
+      "passed": true
+    },
+    {
+      "name": "Changing concentration/rate units preserves model ranking",
+      "passed": true
+    },
+    {
+      "name": "Changing units rescales kinetic parameters consistently",
+      "passed": true
+    },
+    {
+      "name": "Molar-scale design remains nonempty and approximately unit-equivariant",
+      "passed": true
+    },
+    {
+      "name": "Weak inhibition produces limited/ambiguous/tentative evidence",
+      "passed": true
+    },
+    {
+      "name": "No inhibition does not produce an unqualified confident mechanism",
+      "passed": true
+    },
+    {
+      "name": "Negative measured rates are retained and flagged",
+      "passed": true
+    },
+    {
+      "name": "Validation: missing column",
+      "passed": true
+    },
+    {
+      "name": "Validation: non-numeric row",
+      "passed": true
+    },
+    {
+      "name": "Validation: zero substrate",
+      "passed": true
+    },
+    {
+      "name": "Validation: negative inhibitor",
+      "passed": true
+    },
+    {
+      "name": "Validation: insufficient rows",
+      "passed": true
+    },
+    {
+      "name": "Validation: no inhibitor variation",
+      "passed": true
+    },
+    {
+      "name": "Validation: invalid design bounds",
+      "passed": true
+    },
+    {
+      "name": "Independent R science-regression.R",
+      "passed": true
+    }
+  ],
+  "interpretation": "Computational regression results on synthetic fixtures; not validation of experimental mechanisms."
+}

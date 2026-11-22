@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-11",
+  "method": "Observed browser interactions, screenshots and actual downloaded-file inspection",
+  "checks": [
+    {
+      "name": "Real R startup and mixed example",
+      "passed": true,
+      "evidence": "R 4.6.0; n=96; 32 pairs; Mixed leading; delta AICc=104.12"
+    },
+    {
+      "name": "CSV file chooser import",
+      "passed": true,
+      "evidence": "competitive-noisy.csv, n=96; Competitive leading, delta=2.23"
+    },
+    {
+      "name": "Model inspection",
+      "passed": true,
+      "evidence": "Selecting Competitive updated parameter table and residuals"
+    },
+    {
+      "name": "User design bounds",
+      "passed": true,
+      "evidence": "S 10..100 and I 0..25 produced in-range suggestions"
+    },
+    {
+      "name": "Invalid input and stale results",
+      "passed": true,
+      "evidence": "Negative inhibitor in data row2 rejected; report disabled"
+    },
+    {
+      "name": "Blind challenge",
+      "passed": true,
+      "evidence": "Low seed42: hidden Noncompetitive; top model Noncompetitive; reveal matched"
+    },
+    {
+      "name": "CSV/report/R downloads",
+      "passed": true,
+      "evidence": "All3 downloaded; CSV headers and96rows independently inspected; R reproduced by separate6-check suite"
+    },
+    {
+      "name": "Keyboard tabs",
+      "passed": true,
+      "evidence": "ArrowRight from Workspace selected Blind challenge; aria-selected=true"
+    },
+    {
+      "name": "Mobile breakpoint",
+      "passed": true,
+      "evidence": "390x844 viewport; body clientWidth=scrollWidth=375; inspected mobile screenshot"
+    },
+    {
+      "name": "English interface",
+      "passed": true,
+      "evidence": "Interface, warnings, methods and report inspected in English"
+    }
+  ]
+}

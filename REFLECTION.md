@@ -1,0 +1,11 @@
+# Reflection
+
+I chose to develop KINETIC because I wanted to examine how evidence supports an enzyme inhibition model. Comparing competitive, uncompetitive, noncompetitive and mixed inhibition gives the project a connection to biochemical research. I also wanted the app to suggest what measurement might help resolve uncertainty. I asked for an English interface and an app that opens without signing in so a reviewer could try it directly.
+
+The app fits the same initial-rate data to four candidate models and compares their AICc values. Its conclusions depend on the data meeting the assumptions of reversible steady-state inhibition and the chosen error model. A leading model therefore describes relative support among the candidates. It cannot establish where an inhibitor binds or exclude mechanisms outside this set.
+
+The recorded browser results show why that distinction matters. The mixed-inhibition example contained 96 observations across 32 concentration pairs and had a runner-up delta AICc of 104.12. The low-noise blind challenge at seed 42 correctly ranked the hidden noncompetitive model first, yet its runner-up delta AICc was only 2.01. Recovering the generating model did not make the second result decisive. The weak-inhibition tests also show that a dataset can be insufficient to distinguish mechanisms. More precise measurements or a more informative concentration range could matter more than adding replicates at the same conditions.
+
+I would treat the next-experiment suggestions as starting points. The score measures disagreement between the two leading models relative to a noise scale. It does not include parameter uncertainty, cost or assay feasibility. Before choosing a proposed condition, I would check whether the concentrations are practical and whether extrapolation makes the predictions unreliable. I would then compare the new observations with both predictions and reassess the ranking.
+
+The exported R script reproduced the example analysis in a fresh R session. That matters because another person can inspect the calculation and rerun the same analysis from the data. For real data, I would first check assay controls and the residuals, then decide whether the evidence justifies using the model to plan another measurement. [Recorded test results](EVALUATION.md)

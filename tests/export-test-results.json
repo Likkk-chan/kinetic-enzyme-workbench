@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": 6,
+  "details": [
+    "Downloaded HTML report contains valid named analysis JSON",
+    "Exported script writes valid kinetic-results.json without external packages",
+    "Exported script reproduces input observations and model ordering",
+    "Exported script reproduces all fitted kinetic parameters within 1e-8 relative tolerance",
+    "Exported script reproduces AICc evidence and RMSE values",
+    "Exported script reproduces proposed experimental conditions and scores"
+  ],
+  "runtime": {
+    "webR": "0.6.0",
+    "R": "R version 4.6.0 (2026-04-24)"
+  },
+  "source": {
+    "R": "examples/example-analysis.R",
+    "report": "examples/example-report.html"
+  },
+  "n": 96,
+  "conditions": 32,
+  "preferredModel": "mixed",
+  "parameters": {
+    "Vmax": 120.701356275341,
+    "Km": 36.6540429847711,
+    "Kis": 13.2510022618428,
+    "Kii": 59.2744977686086
+  },
+  "runnerUpDeltaAicc": 104.11988717291,
+  "maximumRelativeParameterDifference": 0,
+  "tolerance": 1e-8,
+  "durationSeconds": 3.637,
+  "interpretation": "Actual browser-downloaded R script independently re-executed; computational reproducibility of this synthetic example."
+}
